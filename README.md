@@ -10,7 +10,7 @@ Demo: [gitbookio.github.io/slate-edit-table/](https://gitbookio.github.io/slate-
 ### Install
 
 ```
-npm install slate-edit-table
+npm install @harveyprince/slate-edit-table
 ```
 
 ### Features
@@ -24,7 +24,7 @@ npm install slate-edit-table
 ### Simple Usage
 
 ```js
-import EditTable from 'slate-edit-table'
+import EditTable from '@harveyprince/slate-edit-table'
 
 const plugins = [
   EditTable()
@@ -118,6 +118,13 @@ defaults to center, `at` is optional and defaults to current cursor position.
 > The `align` values are stored in the table node's data.
 > `table.node.data.get('align')` should be an array of aligns string, corresponding to
 each column.
+
+#### `changes.setCellColor`
+
+`plugin.changes.setCellColor(change: Change, color: string, x: number, y: number) => Change`
+
+Sets cell color for a given cell (`x  y`), in the current table.
+
 
 ### TablePosition
 
