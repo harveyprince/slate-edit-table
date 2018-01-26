@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.5"></a>
+## [0.13.5](https://github.com/GitbookIO/slate-edit-table/compare/v0.13.4...v0.13.5) (2018-01-26)
+
+
+
 <a name="0.13.4"></a>
 ## [0.13.4](https://github.com/GitbookIO/slate-edit-table/compare/0.13.3...0.13.4) (2018-01-26)
 
