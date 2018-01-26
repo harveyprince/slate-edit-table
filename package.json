@@ -1,7 +1,7 @@
 {
-  "name": "slate-edit-table",
+  "name": "@harveyprince/slate-edit-table",
   "description": "A Slate plugin to handle keyboard events in tables.",
-  "version": "0.13.3",
+  "version": "0.13.4",
   "license": "Apache-2.0",
   "repository": "git://github.com/GitbookIO/slate-edit-table.git",
   "main": "./dist/index.js",
@@ -34,11 +34,13 @@
     "slate": "^0.31.8",
     "slate-hyperscript": "^0.4.6",
     "slate-react": "^0.10.0",
+    "standard-version": "^4.3.0",
     "watchify": "^3.7.0"
   },
   "scripts": {
     "prepublish": "babel ./lib --out-dir ./dist",
     "postpublish": "npm run deploy-example",
+    "release": "standard-version",
     "lint": "eslint ./",
     "build-example": "browserify ./example/main.js -o ./example/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ]",
     "watch-example": "watchify ./example/main.js -o ./example/bundle.js -t [ babelify --presets [ es2015 react stage-0 ] ] -v",
