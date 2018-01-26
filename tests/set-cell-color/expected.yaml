@@ -1,0 +1,26 @@
+document:
+  nodes:
+    - kind: block
+      type: table
+      data:
+        presetAlign:
+            - center
+            - left
+      nodes:
+        - kind: block
+          type: table_row
+          nodes:
+            - kind: block
+              type: table_cell
+              data:
+                color: "#000000"
+              nodes:
+                - kind: text
+                  leaves:
+                    - text: "Col 0, Row 0"
+            - kind: block
+              type: table_cell
+              nodes:
+                - kind: text
+                  leaves:
+                    - text: "Col 1, Row 0"
